@@ -55,3 +55,30 @@ button {
   color: #040404;
 }
 
+/* Search Button */
+.search-button {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #00bda5;
+  border: 1px solid #00bda5;
+  padding: 2px;
+  margin-left: -6px;
+}
+
+.search-button:hover {
+  background-color: #01c2a9;
+}
+
+/* Input Bar */
+input[type="number"] {
+  width: 25%;
+  border: 1px solid #00bda5;
+}
+
+/* City */
+.city {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-top: 40px;
+  font-size: 48px;
+}
