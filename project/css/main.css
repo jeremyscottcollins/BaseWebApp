@@ -32,3 +32,26 @@ button {
   height: 200px;
   margin-top: 60px;
 }
+
+/* Navigation */
+
+.nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.nav > li {
+  display: inline-block;
+  float:none;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #040404;
+}
+
