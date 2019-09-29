@@ -9,14 +9,19 @@
   <div class="page-header">
     <% include ../helpers/navbar %>
   
-    <h1>My Web App</h1>
+    <h1>Get Weather by ZIP Code</h1>
   </div>
 
-  <p>Click on the button for a surprise.</p>
+  <input type="text" class="search" placeholder="Enter your ZIP Code">
+  <button type="button" onclick="searchWeather()">Search</button>
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
+  <div class="city"></div>
 
-  <div id="image"></div>
+  <div class="temp"></div>
+
+  <div class="wind"></div>
+
+  <div class="error-message"></div>
   
 </body>
 
