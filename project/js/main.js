@@ -11,6 +11,7 @@ function getWeather(searchQuery){
     $(".city").text(" " + data.name);
     $(".temp").text(data.main.temp.toFixed(0));
     $(".wind").text(data.wind.speed.toFixed(0) + " mph " + (degToDirection(windDirection)));
+    $(".condition").text(data.weather[0].main);
   }, error: function(error){
     $(".error-message").text("An error occurred.");
   }})
@@ -21,6 +22,7 @@ function searchWeather(){
   getWeather(searchQuery);
 }
 
+// Convert wind degrees (num 1-360) to readable directions
 function degToDirection(deg){
   if (deg>337.5) return 'North';
   if (deg>292.5) return 'North West';
@@ -31,4 +33,11 @@ function degToDirection(deg){
   if(deg>67.5) return 'East';
   if(deg>22.5){return 'North East';}
   return 'North';
+}
+
+// Convert cloudiness percentage to readable text
+function cloudiness(per){
+  if (per>75) return 'Cloudy';
+  if (per>10) return 'Partly Cloudy';
+  return 'Clear';
 }

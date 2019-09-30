@@ -127,5 +127,10 @@ input[type="number"] {
                     {
                         font-size: 24px;
                     }
+
+                    .weather .current .info .condition-label
+                    {
+                        font-size: 24px;
+                    }
     
           
