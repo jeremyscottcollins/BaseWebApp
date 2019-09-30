@@ -13,6 +13,15 @@ h1 {
   font-size: 48px;
 }
 
+a {
+  color: #347bd5;
+}
+
+a:hover {
+  color: #16367c;
+  text-decoration: none;
+}
+
 p {
   margin-top: 80px;
 }
