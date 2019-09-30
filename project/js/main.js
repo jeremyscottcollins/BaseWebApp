@@ -13,7 +13,7 @@ function getWeather(searchQuery){
     $(".wind").text(data.wind.speed.toFixed(0) + " mph " + (degToDirection(windDirection)));
     $(".condition").text(data.weather[0].main);
   }, error: function(error){
-    $(".error-message").text("An error occurred.");
+    $(".error-message").text("An error occurred. Enter a 5 digit zip code.");
   }})
 }
 
