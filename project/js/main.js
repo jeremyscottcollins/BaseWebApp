@@ -8,9 +8,9 @@ function getWeather(searchQuery){
 
   $.ajax(url,{success: function(data){
     var windDirection = data.wind.deg;
-    $(".city").text(data.name);
-    $(".temp").text("The current temperature is " + data.main.temp + " degrees.");
-    $(".wind").text("Wind speed: " + data.wind.speed + "mph " + (degToDirection(windDirection)));
+    $(".city").text(" " + data.name);
+    $(".temp").text(data.main.temp.toFixed(0));
+    $(".wind").text(data.wind.speed.toFixed(0) + " mph " + (degToDirection(windDirection)));
   }, error: function(error){
     $(".error-message").text("An error occurred.");
   }})

@@ -78,7 +78,54 @@ input[type="number"] {
 /* City */
 .city {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  /* font-weight: 400;
   margin-top: 40px;
-  font-size: 48px;
+  font-size: 48px; */
 }
+
+
+
+/* WEATHER */
+.weather{
+            display: flex;
+            flex-flow: column wrap;
+            box-shadow: 0px 1px 10px 0px #cfcfcf;
+            overflow: hidden;
+            margin-top: 40px;
+        }
+    
+            .weather .current
+            {
+                display: flex;
+                flex-flow: row wrap;
+                background-image: url("/images/london-view.png");
+                background-repeat: repeat-x;
+                color: white;
+                padding: 20px;
+                text-shadow: 1px 1px #000000;
+            }
+    
+                .weather .current .info
+                {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-around;
+                    flex-grow: 2;
+                }
+    
+                    .weather .current .info .city-label
+                    {
+                        font-size: 26px;
+                    }
+    
+                    .weather .current .info .temp-label
+                    {
+                        font-size: 56px;
+                    }
+    
+                    .weather .current .info .wind-label
+                    {
+                        font-size: 24px;
+                    }
+    
+          
